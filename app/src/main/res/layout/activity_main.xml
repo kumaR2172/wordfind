@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Word Finding!"
+        android:textColor="#1E90FF"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+       />
+
+    <SearchView
+        android:id="@+id/s1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:queryHint="Search here"
+        android:iconifiedByDefault="false"
+        android:layout_below="@+id/text">
+
+    </SearchView>
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/re1"
+    android:layout_below="@+id/s1"
+    android:layout_width="match_parent"
+    android:layout_marginTop="35dp"
+    android:layout_height="match_parent">
+
+</androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>
